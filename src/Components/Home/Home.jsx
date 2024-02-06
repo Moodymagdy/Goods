@@ -154,7 +154,7 @@ export default function Home() {
         <div className="col-md-6 d-flex justify-content-start align-items-center">
           <div>
             <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
-            <h4 className='fw-bold pt-5'>Take Now 30% Off For All Grocer Product</h4>
+            <h4 className='fw-bold pt-5'>Take Now <span className='green-text'>30%</span>  Off For All Grocer Product</h4>
             <div className='pt-5'>
             <button className="btn btn-danger btn-sm rounded-pill mt-4 px-3 py-2">
  <span className='m-3'>Shop Now</span> 
