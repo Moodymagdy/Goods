@@ -147,6 +147,29 @@ export default function Home() {
 </section>
 
 
+{/*image and text*/}
+<div className="container-fluid pt-5 mt-5 mx-5 pb-5">
+      <div className="row">
+        {/* First half */}
+        <div className="col-md-6 d-flex justify-content-start align-items-center">
+          <div >
+            <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
+            <h4 className='fw-bold pt-5'>Take Now 30% Off For All Grocer Product</h4>
+            <div className='pt-5'>
+            <button className="btn btn-danger btn-sm rounded-pill mt-4 px-3 py-2">
+ <span className='m-3'>Shop Now</span> 
+</button>
+          </div>
+        </div>
+     </div>
+        {/* Second half */}
+        <div className="col-md-6">
+          <img src={require("../Home/imgs/lab.jpeg")} alt="Your Image" className="img-fluid img-large rounded-5" />
+        </div>
+      </div>
+    </div>
+
+
 
     </>
   
