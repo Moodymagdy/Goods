@@ -152,7 +152,7 @@ export default function Home() {
       <div className="row">
         {/* First half */}
         <div className="col-md-6 d-flex justify-content-start align-items-center">
-          <div >
+          <div>
             <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
             <h4 className='fw-bold pt-5'>Take Now 30% Off For All Grocer Product</h4>
             <div className='pt-5'>
