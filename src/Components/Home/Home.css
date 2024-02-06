@@ -6,3 +6,11 @@
   .icon {
     font-size: 4rem;
   }
+
+  .button-border {
+    border: 1px solid #0f0f0f !important; /* Adjust thickness and color as needed */
+    border-radius: 10px !important; /* Adjust border radius as needed */
+  }
+
+
+ 

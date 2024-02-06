@@ -2,14 +2,17 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import './Layout.css';
+import Footer from '../Footer/Footer';
 
 export default function Layout() {
   return <>
- <div className="layout-container">
-      <Navbar />
-      <div className='p-4'>
+        <Navbar />
+
+ 
+      <div className='min-vh-100'>
       <Outlet/>
-      </div>
-    </div>
+   </div>
+    <Footer/>
+
   </>
 }

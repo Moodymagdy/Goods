@@ -1,0 +1,221 @@
+.available-promotions-layer {
+    background-color: #f8f9fa; /* Add your desired background color */
+    padding: 20px; /* Add padding as needed */
+  }
+
+  /* Custom Styles for Paragraph with Black Background Layer */
+  .black-background-paragraph-layer {
+    background-color: rgb(134, 130, 130);
+    padding: 10px 10px ;
+
+    
+  }
+
+  .master-icon {
+    font-size: 2rem;
+  }
+
+  .logo-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+
+  .product-list {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+    margin-right: 60px;
+  }
+  
+  .product-item {
+    text-align: center; /* Center the content */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .product-image {
+    width: 100%; /* Make the image fill the container */
+    max-width: 200px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .button-container {
+    margin-top: 10px; /* Adjust spacing between image and button */
+  }
+
+
+  .btn-product {
+    color:blue !important;
+  }
+
+
+  .allow-substitutions-layer {
+    /* Add styling for the "Allow grocery substitutions?" layer */
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+  
+  .allow-substitutions-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .info-icon-container i {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: #3498db; /* Adjust the icon color as needed */
+    margin-left: 10px; /* Adjust spacing between heading and icon as needed */
+  }
+
+  .your-shipment-layer {
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+  
+  .light-font {
+    font-weight: lighter; /* Adjust the font weight to make it lighter */
+    font-size:medium; /* Adjust the font size to make it smaller */
+  }
+
+
+  .your-shipment-layer {
+    margin-top: 20px;
+  }
+  
+  .shipment-details {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  .shipment-details i {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  .light-font {
+    font-weight: lighter;
+    font-size: smaller;
+  }
+
+  .car-icon {
+    font-size: 2rem;
+  }
+
+  .item-count {
+    text-align: right;
+  }
+
+
+  /* switch button css */
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+  
+  
+  .shipment-details i {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+
+
+  .shipment-container {
+    border: 1px solid #ccc; /* Adjust the border styling as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  
+  .shipment-image {
+    margin-top: 10px; /* Adjust spacing as needed */
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-image {
+    width: 60px; /* Adjust the image size as needed */
+    height: 80px; /* Adjust the image size as needed */
+    margin-right: 10px; /* Adjust spacing between image and text as needed */
+  }
+  
+  .light-font {
+    font-weight: lighter;
+    font-size: medium;
+  }
+
+  .allow-substitutions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .switch-info-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .trash-icon {
+    margin-left: auto;
+    color: blue;
+    font-size: 1.2rem;
+  }
+
+  .add-icon {
+    color: blue;
+    font-size: 1.2rem;
+  }
+
+  
+  
