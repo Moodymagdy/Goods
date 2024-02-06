@@ -21,7 +21,7 @@ export default function Home() {
             </Helmet>
   
   <div className=" mt-5 m-5 px-5" style={{color:'black'}}>
-      <h1 className="display-4 fw-bold ">Savor the <span style={{color:'green'}}>taste of pure <br />nature</span> anytime anywhere</h1>
+      <h1 className="display-4 fw-bold ">Gioo the <span style={{color:'green'}}>taste of pure <br />nature</span> anytime anywhere</h1>
       <p className="lead mt-5 fw-semibold">
        Discover nature's best at our organic online store. <br />
        Convenient delivery, high quality products, <br />
