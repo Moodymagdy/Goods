@@ -30,7 +30,7 @@ export default function Home() {
        and a commitment to organic options, <br />
        Start shopping now and experience the difference.
       </p>
-      <button className="btn btn-danger btn-sm rounded-pill mt-4 px-3 py-2">
+      <button className="btn btn-danger btn-sm rounded-pill mt-4 px-4 py-2">
  <span className='m-3'>Order Now</span> 
    <i className="fa-solid fa-chevron-right"></i>
 </button>
