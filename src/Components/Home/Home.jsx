@@ -3,6 +3,7 @@ import '../Home/Home.css';
 import Helmet from 'react-helmet';
 import News from './News';
 import Card from './Card';
+import TopCategory from './TopCategory';
 
 
 
@@ -74,7 +75,8 @@ export default function Home() {
         </div>
       </div>
     </div>
-
+ {/* Top Category*/}
+ <TopCategory/>
 
 
      {/* New Section */}
