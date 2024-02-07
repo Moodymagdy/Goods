@@ -24,14 +24,14 @@ export default function News() {
 
   return (
     <>
-     <div className="container d-flex justify-content-center ms-3">
-     <div className=" sale">
+     <div className="container ms-5rem ms-3rem">
+     <div className=" blog">
      <h2 className="">Blog & News</h2>
-     <div className="row mt-4 m-5">
-     <div  className="position-relative col-md-4  col-sm-6 mt-1">
+     <div className="row mt-3 d-flex justify-content-center">
+     <div  className="position-relative col-md-4 col-sm-6 mt-1">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "20rem" ,  height:"22rem"}}
+                style={{ width: "23rem" ,  height:"22rem"}}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -61,7 +61,7 @@ export default function News() {
             <div  className="position-relative col-md-4  col-sm-6 mt-1">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "20rem" ,  height:"22rem"}}
+                style={{ width: "23rem" ,  height:"22rem"}}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -92,7 +92,7 @@ export default function News() {
             <div  className="position-relative col-md-4  col-sm-6 mt-1">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "20rem" ,  height:"22rem"}}
+                style={{ width: "23rem" ,  height:"22rem"}}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -121,7 +121,7 @@ export default function News() {
 
      </div>
      <Link to="/Shop" col-sm-12>
-        <div className="text-left d-flex w-100  justify-content-end ">
+        <div className="text-left d-flex w-100 mt-3 justify-content-end ">
           <button className="btn btn-outline-dark w-15 All_News mt-3  ">
             {" "}
             All News &gt;{" "}
