@@ -1,6 +1,8 @@
 import React from 'react';
 import '../Home/Home.css';
 import Helmet from 'react-helmet';
+import News from './News';
+import Card from './Card';
 
 
 
@@ -169,7 +171,8 @@ export default function Home() {
         </div>
       </div>
     </div>
-
+    <Card/>
+<News/> 
 
 
     </>

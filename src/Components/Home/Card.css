@@ -1,0 +1,97 @@
+
+    .sale-item {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .sale-item-image {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .sale-item-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        width: 50%;
+      }
+      .price {
+        font-weight: bold;
+        color: #f00;
+      }
+      .original-price {
+        font-size: 14px;
+        color: #999;
+        text-decoration: line-through;
+      }
+      .add-Btn{
+        width: 200% !important;
+        margin-left: -30px !important;
+        border-radius: 30px !important;
+        margin-top: 10px !important;
+    }
+      
+      .sale{
+        margin: 100px;
+      }
+      .mark{
+        background-color:#749b40 !important;
+        color: white !important ;
+        width: 70px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        position: absolute;
+        margin-left: -30px;
+        margin-top: 15px;
+        text-align: center;
+      
+      }
+      a{
+        text-decoration: none;
+      }
+      .card{
+        border-radius: 28px !important;
+      }
+      .show {
+        margin-top: -55px;
+        width: 13% !important;
+        margin-right: 40px !important;
+        text-decoration: none;
+    }
+      .price{
+        color: green;
+          font-size: large;
+          font-weight: 700;
+      }
+      .descount{
+        font-size: small !important;
+      }
+      .fs-14px{
+        font-size: 14px !important;
+      }
+      .fs-10px{
+        font-size: 10px !important;
+      }
+      .cardS{
+       
+            margin: 20px;
+            border: 2px solid #ededed;
+            padding: 14px;
+            cursor: pointer;
+            border-radius: 30px !important;
+      }
+      .img_border{
+        border-radius: 15px !important;
+      }
+      link{
+        text-decoration: none;
+      }
