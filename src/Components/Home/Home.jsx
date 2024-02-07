@@ -30,7 +30,7 @@ export default function Home() {
        and a commitment to organic options, <br />
        Start shopping now and experience the difference.
       </p>
-      <button className="btn btn-danger btn-sm rounded-pill mt-5 px-4 py-2">
+      <button className="btn  btn-sm rounded-pill mt-5 px-4 py-2" style={{backgroundColor:'#b80000', color:'white'}}>
  <span className='m-3'>Order Now</span> 
    <i className="fa-solid fa-chevron-right"></i>
 </button>
@@ -89,10 +89,12 @@ export default function Home() {
         <img src={imageUrl2} alt="Your Alt Text 2" className="img-fluid rounded-5 mx-auto d-block" />
       </div>
     </div>
+    
+
 
     <div className="col-lg-6 col-md-9">
       {/* Text content */}
-      <div className="content-right text-black px-4 px-md-5 mt-5 d-flex flex-column justify-content-between">
+      <div className="content-right text-black px-4 px-md-4 mt-5 d-flex flex-column justify-content-between">
         <div>
           <h4 className='fw-bold '>Study Shows Link Between Organic Food And Improved Health</h4>
           <p className='fw-semibold my-4'>A recent study has shown that consuming organic food may be linked to improved health outcomes. The study, which analyzed data from thousands of participants over several years, found that those who consumed organic food had lower rates of certain health conditions, such as allergies and digestive issues.
@@ -117,7 +119,7 @@ export default function Home() {
 
 {/* Image with a button */}
 <div className="col-lg-6 col-md-8 my-5 order-md-1 order-lg-last">
-  <div className="rounded-rectangle-image">
+  <div className="rounded-rectangle-image mb-5">
     <img src={imageUrl1} alt="Your Alt Text 1" className="img-fluid rounded-5 mx-auto d-block" />
   </div>
 </div>
@@ -125,7 +127,7 @@ export default function Home() {
 
 {/* Text content */}
 <div className="col-lg-6 col-md-9 order-md-2 order-lg-first">
-  <div className="content-left text-black px-4 px-md-5  d-flex flex-column justify-content-between h-100">
+  <div className="content-left text-black px-4  px-md-3  d-flex flex-column justify-content-between h-100">
     <div>
       <h4 className='fw-bold'>Try Our Delicious And Healthy Organic Kale Salad Recipe!</h4>
       <p className='fw-semibold my-4'>Looking for a healthy and tasty recipe that's packed with nutrients? Our organic kale salad recipe is just what you need! Made with fresh, organic ingredients, this salad is not only delicious but also incredibly nutritious.
@@ -136,8 +138,8 @@ export default function Home() {
     </div>
 
     {/* Button */}
-    <div className="text-end mt-4">
-      <button className="btn btn-light button-border btn-sm rounded-pill px-3 py-2 mx-3 my-4">
+    <div className="text-end mt-3">
+      <button className="btn btn-light button-border btn-sm rounded-pill px-3 py-2 mx-3 my-1">
         <span className='m-3 fw-bold'>Read More</span>
         <i className="fa-solid fa-chevron-right"></i>
       </button>
@@ -150,15 +152,15 @@ export default function Home() {
 
 
 {/*image and text*/}
-<div className="container-fluid pt-5 mt-5 mx-5 px-5 pb-5 mb-5">
+<div className="container-fluid  pt-5 mt-5 px-5 pb-5 mb-5">
       <div className="row">
         {/* First half */}
-        <div className="col-md-6 d-flex justify-content-start align-items-center">
+        <div className="col-md-6 px-5 d-flex justify-content-start align-items-center  ">
           <div>
             <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
             <h4 className='fw-bold pt-5'>Take Now <span className='green-text'>30%</span>  Off For All Grocer Product</h4>
             <div className='pt-5'>
-            <button className="btn btn-danger btn-sm rounded-pill mt-4 px-4 py-2">
+            <button className="btn btn-sm rounded-pill mt-4 px-4 py-2" style={{backgroundColor:'#b80000', color:'white'}}>
  <span className='m-3'>Shop Now</span> 
  <i className="fa-solid fa-chevron-right"></i>
 </button>
@@ -166,8 +168,10 @@ export default function Home() {
         </div>
      </div>
         {/* Second half */}
+       
         <div className="col-md-6">
           <img src={require("../Home/imgs/lab.jpeg")} alt="Your img" className="img-fluid img-large rounded-5" />
+        
         </div>
       </div>
     </div>

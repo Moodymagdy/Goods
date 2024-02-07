@@ -3,7 +3,7 @@ import '../Footer/Footer.css'
 
 export default function Footer() {
   return <>
-  <footer className="bg-danger pt-4  text-white">
+  <footer className=" pt-4  text-white" style={{backgroundColor:'#b80000'}}>
       <div className="container d-flex flex-column justify-content-center align-items-center">
         <h4 className="mb-3">Get Exclusive Access & 10% Off</h4>
         <p className="mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -12,7 +12,7 @@ export default function Footer() {
          <div className="input-group mb-3 align-items-center justify-content-center">
           <input type="email" className="input-group-text rounded-pill mx-3 px-5  " placeholder="Enter your email" />
           <div className="input-group-append">
-            <button className="btn btn-warning rounded-pill px-4 text-light mt-sm-0 mt-4" type="button">Subscribe</button>
+            <button className="btn rounded-pill px-4 text-light mt-sm-0 mt-4" style={{backgroundColor:'#ffa500'}} type="button">Subscribe</button>
           </div>
         </div>
 

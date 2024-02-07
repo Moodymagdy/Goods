@@ -10,14 +10,14 @@ export default function Navbar() {
      
       <nav className="navbar navbar-expand-lg bg-transparent fw-bold mx-5" >
         <div className="container-fluid" >
-          <Link className="navbar-brand text-danger " href="#"> <h3>Goods</h3></Link>
+          <Link className="navbar-brand" style={{color:'#b80000'}} href="#"> <h3>Goods</h3></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse mx-5"  id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item px-2">
-                <Link className="nav-link text-danger" aria-current="page" to="">Home</Link>
+                <Link className="nav-link" style={{color:'#b80000'}} aria-current="page" to="">Home</Link>
               </li>
               <li className="nav-item px-2 ">
                 <Link className="nav-link" to="Sale">Sale</Link>
