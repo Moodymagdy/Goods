@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Navbar/Navbar.css'
 
 import { Link } from 'react-router-dom';
 
@@ -35,7 +36,7 @@ export default function Navbar() {
               <div className="input-group mb-3 mx-5">
               <input type="text" className="form-control rounded-pill text-danger" st aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder= "Search..." />
                 <button className="btn btn-danger rounded-circle px-1 py-1 " style={{right:'30px',top:'7px',height:'25px',fontSize:'0.8rem'}}  type="button">
-                  <i className="fas fa-search"></i>
+                  <i className="fas fa-search search-icon"></i>
                 </button>
                 <button className="btn btn-outline mx-4" type="button">
                   Sign In

@@ -23,14 +23,14 @@ export default function Home() {
             </Helmet>
   
   <div className=" mt-5 m-5 px-5" style={{color:'black'}}>
-      <h1 className="display-4 fw-bold ">Goods the <span style={{color:'green'}}>taste of pure <br />nature</span> anytime anywhere</h1>
+      <h1 className="display-4 fw-bold ">Savor the <span style={{color:'#527853 '}}>taste of pure <br />nature</span> anytime anywhere</h1>
       <p className="lead mt-5 fw-semibold">
        Discover nature's best at our organic online store. <br />
        Convenient delivery, high quality products, <br />
        and a commitment to organic options, <br />
        Start shopping now and experience the difference.
       </p>
-      <button className="btn btn-danger btn-sm rounded-pill mt-4 px-4 py-2">
+      <button className="btn btn-danger btn-sm rounded-pill mt-5 px-4 py-2">
  <span className='m-3'>Order Now</span> 
    <i className="fa-solid fa-chevron-right"></i>
 </button>
