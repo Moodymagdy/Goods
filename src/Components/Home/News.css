@@ -1,8 +1,11 @@
-.sale{
+.blog{
     margin: 60px !important;
   }
   .cardN{
     border-radius: 28px !important;
+    background-color: #fffef7 !important;
+    border: 3px solid #d2d1cb !important;
+    
   }
   .img_card{
     border-radius: 30px !important;
@@ -18,20 +21,29 @@
     margin-bottom: 3% !important;
   }
   .All_News{
-    width: 115px !important;
+    width: 140px !important;
     border-radius: 30px !important;
   }
   a{
     text-decoration: none;
   }
-  .reedmore{
+  .reedmore {
+    margin-top: -7px;
     color: red !important;
-    margin-left: 115px !important;
+    margin-left: 150px !important;
     font-size: medium !important;
     width: 125px !important;
-    text-decoration: none !important;
+    text-decoration: auto;
   }
   
 .w15{
     width: 15% !important;
+}
+.ms-5rem {
+  margin-left: 5rem!important;
+}
+@media (max-width: 768px) {
+  .ms-3rem {
+    margin-left: -3rem!important;
+}
 }

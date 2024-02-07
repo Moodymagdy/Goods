@@ -40,7 +40,7 @@
     }
       
       .sale{
-        margin: 100px;
+        margin: 80px;
       }
       .mark{
         background-color:#749b40 !important;
@@ -89,6 +89,7 @@
             padding: 14px;
             cursor: pointer;
             border-radius: 30px !important;
+            background-color: #fffef7 !important;
       }
       .img_border{
         border-radius: 15px !important;
@@ -96,3 +97,12 @@
       link{
         text-decoration: none;
       }
+      @media (max-width: 768px) {
+        .show {
+          margin-top: -52px;
+          width: 40% !important;
+          margin-right: 20px !important;
+          border-radius: 35px !important;
+        }
+      }
+      
