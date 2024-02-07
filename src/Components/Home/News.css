@@ -1,0 +1,37 @@
+.sale{
+    margin: 60px !important;
+  }
+  .cardN{
+    border-radius: 28px !important;
+  }
+  .img_card{
+    border-radius: 30px !important;
+    width: 80% !important;
+    margin-top: 18px !important;
+  }
+  .mt--15{
+    margin-top: -15px !important;
+  }
+  .news{
+    margin: 100px;
+    margin-left: 10% !important;
+    margin-bottom: 3% !important;
+  }
+  .All_News{
+    width: 115px !important;
+    border-radius: 30px !important;
+  }
+  a{
+    text-decoration: none;
+  }
+  .reedmore{
+    color: red !important;
+    margin-left: 115px !important;
+    font-size: medium !important;
+    width: 125px !important;
+    text-decoration: none !important;
+  }
+  
+.w15{
+    width: 15% !important;
+}
