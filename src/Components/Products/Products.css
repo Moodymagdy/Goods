@@ -22,14 +22,18 @@
   }
 
   .product-list {
-    display: flex;
-    justify-content: space-around; /* Adjust spacing as needed */
-    margin-right: 60px;
+    
+    justify-content:space-around; /* Adjust spacing as needed */
+   padding-right: 80px;
+   
   }
+
+ 
   
   .product-item {
     text-align: center; /* Center the content */
     margin-bottom: 20px; /* Adjust margin as needed */
+    margin-right: 10px;
   }
   
   .product-image {
