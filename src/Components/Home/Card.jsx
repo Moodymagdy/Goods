@@ -219,7 +219,7 @@ export default function Card() {
         {/* {Product.length >= 5 && ( */}
           <Link to="/Shop">
             <div className="col-sm-6 text-left d-flex w-100  justify-content-end  ">
-              <button className="btn btn-danger show  ">
+              <button className="btn btn-danger show ">
                 {" "}
                 Show more &gt;{" "}
               </button>
