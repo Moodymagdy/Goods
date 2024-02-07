@@ -2,6 +2,8 @@ import React from 'react';
 import '../Products/Products.css';
 
 
+
+
 export default function Products() {
 
   const products = [
@@ -24,9 +26,9 @@ export default function Products() {
           {/* First Layer: Items related to your cart */}
           <div className="cart-items-layer py-4">
       <h4>Items related to your cart</h4>
-      <div className="product-list py-4">
+      <div className="product-list d-flex py-4 mx-3 ">
         {products.map(product => (
-          <div key={product.id} className="product-item px-3">
+          <div key={product.id} className="product-item">
             <div className="card px-5 rounded-4">
               <img src={product.imageSrc} alt={product.alt} className="product-image mt-2" />
               <div className="button-container">
@@ -86,6 +88,7 @@ export default function Products() {
                   </div>
                   <i class="fa-solid fa-trash mt-4 px-2 trash-icon" ></i>
                   <i class="fa-solid fa-plus mt-4 px-2 add-icon"></i>
+                  
                  
                 </div>
               </div>

@@ -21,7 +21,7 @@ export default function Home() {
             </Helmet>
   
   <div className=" mt-5 m-5 px-5" style={{color:'black'}}>
-      <h1 className="display-4 fw-bold ">JO the <span style={{color:'green'}}>taste of pure <br />nature</span> anytime anywhere</h1>
+      <h1 className="display-4 fw-bold ">Goods the <span style={{color:'green'}}>taste of pure <br />nature</span> anytime anywhere</h1>
       <p className="lead mt-5 fw-semibold">
        Discover nature's best at our organic online store. <br />
        Convenient delivery, high quality products, <br />
@@ -165,7 +165,7 @@ export default function Home() {
      </div>
         {/* Second half */}
         <div className="col-md-6">
-          <img src={require("../Home/imgs/lab.jpeg")} alt="Your Image" className="img-fluid img-large rounded-5" />
+          <img src={require("../Home/imgs/lab.jpeg")} alt="Your img" className="img-fluid img-large rounded-5" />
         </div>
       </div>
     </div>
