@@ -33,9 +33,10 @@
       }
       .add-Btn{
         width: 200% !important;
-        margin-left: -30px !important;
+        margin-left: -40px !important;
         border-radius: 30px !important;
         margin-top: 10px !important;
+        background-color: #b80000 !important;
     }
       
       .sale{
@@ -62,10 +63,10 @@
         border-radius: 28px !important;
       }
       .show {
-        margin-top: -55px;
+        margin-top: -52px;
         width: 13% !important;
-        margin-right: 40px !important;
-        text-decoration: none;
+        margin-right: 85px !important;
+        border-radius: 35px !important;
     }
       .price{
         color: green;
