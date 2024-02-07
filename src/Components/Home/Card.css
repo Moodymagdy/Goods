@@ -99,10 +99,23 @@
       }
       @media (max-width: 768px) {
         .show {
-          margin-top: -52px;
-          width: 40% !important;
-          margin-right: 20px !important;
-          border-radius: 35px !important;
+            margin-top: 19px;
+            width: 40% !important;
+            margin-right: 3px !important;
+            border-radius: 35px !important;
+        }
+        .sale{
+            margin: 0px;
         }
       }
-      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .position-relative.col-md-2.col-sm-6:nth-child(4),
+        .position-relative.col-md-2.col-sm-6:nth-child(5) {
+          display: none;
+        }
+        
+        .col-md-3 {
+          flex: 0 0 auto;
+          width: 25%;
+        }
+      }

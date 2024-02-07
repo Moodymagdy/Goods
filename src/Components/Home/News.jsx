@@ -25,13 +25,13 @@ export default function News() {
   return (
     <>
      <div className="container ms-5rem ms-3rem">
+     <h2 className="px-4 px-5rem ">Blog & News</h2>
      <div className=" blog">
-     <h2 className="">Blog & News</h2>
-     <div className="row mt-3 d-flex justify-content-center">
-     <div  className="position-relative col-md-4 col-sm-6 mt-1">
+     <div className="row mt-3 d-flex justify-content-center gap-3rem ">
+     <div  className="position-relative col-md-4 col-lg-4 col-sm-6 mt-1 me-7rem">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "23rem" ,  height:"22rem"}}
+                style={{ width: "22rem"}}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -40,7 +40,7 @@ export default function News() {
                 />
 
                 <div className="card-body mt--15">
-                  <p className=" text-muted fs-10px mb-0 mt-0">Augest,07,2022</p>
+                  <p className=" text-muted fs-10px mb-0 mt-0 ms-2 me-4rem">Augest,07,2022</p>
                   <p className="card-text fw-bold  my-4 fs-14px">
                     {`Going Green: New Organic Products Now Available in Store hi am joe how are you!`.split(" ").slice(0,9).join(" ")}
                   </p>
@@ -48,7 +48,7 @@ export default function News() {
 
                   <div className="d-grid gap-2 col-6 mx-auto ">
                     <Link to="/#"
-                      className=" reedmore"
+                      className=" reedmore text-end"
                       type="button"
                     >
                       Read More &gt;
@@ -58,10 +58,10 @@ export default function News() {
               </div>
             </div>
             {/* //////// */}
-            <div  className="position-relative col-md-4  col-sm-6 mt-1">
+            <div  className="position-relative col-md-4 col-lg-4 col-sm-6 mt-1 me-4rem">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "23rem" ,  height:"22rem"}}
+                style={{ width: "22rem"}}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -70,7 +70,7 @@ export default function News() {
                 />
 
                 <div className="card-body mt--15">
-                  <p className=" text-muted fs-10px mb-0 mt-0">Augest,07,2022</p>
+                  <p className=" text-muted fs-10px mb-0 mt-0 ms-2">Augest,07,2022</p>
                   <p className="card-text fw-bold  my-4 fs-14px">
                     {`Going Green: New Organic Products Now Available in Store hi am joe how are you!`.split(" ").slice(0,9).join(" ")}
                   </p>
@@ -78,7 +78,7 @@ export default function News() {
 
                   <div className="d-grid gap-2 col-6 mx-auto ">
                     <Link to="/#"
-                      className=" reedmore"
+                      className=" reedmore text-end"
                       type="button"
                     >
                       Read More &gt;
@@ -89,10 +89,10 @@ export default function News() {
             </div>
 
             {/* ////////// */}
-            <div  className="position-relative col-md-4  col-sm-6 mt-1">
+            <div  className="position-relative col-md-4 col-lg-4 col-sm-6 mt-1">
               <div
                 className="card position-relative border-red cardN"
-                style={{ width: "23rem" ,  height:"22rem"}}
+                style={{ width: "22rem" }}
               >
                 <img
                   src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
@@ -101,7 +101,7 @@ export default function News() {
                 />
 
                 <div className="card-body mt--15">
-                  <p className=" text-muted fs-10px mb-0 mt-0">Augest,07,2022</p>
+                  <p className=" text-muted fs-10px mb-0 mt-0 ms-2">Augest,07,2022</p>
                   <p className="card-text fw-bold  my-4 fs-14px">
                     {`Going Green: New Organic Products Now Available in Store hi am joe how are you!`.split(" ").slice(0,9).join(" ")}
                   </p>
@@ -109,7 +109,7 @@ export default function News() {
 
                   <div className="d-grid gap-2 col-6 mx-auto ">
                     <Link to="/#"
-                      className=" reedmore"
+                      className=" reedmore text-end"
                       type="button"
                     >
                       Read More &gt;
@@ -119,10 +119,10 @@ export default function News() {
               </div>
             </div>
 
-     </div>
+
      <Link to="/Shop" col-sm-12>
         <div className="text-left d-flex w-100 mt-3 justify-content-end ">
-          <button className="btn btn-outline-dark w-15 All_News mt-3  ">
+          <button className="btn btn-outline-dark w-15 All_News ">
             {" "}
             All News &gt;{" "}
           </button>
@@ -130,6 +130,7 @@ export default function News() {
       </Link>
      </div>
      </div>
+     </div> 
     </>
   )
 }
