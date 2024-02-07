@@ -176,7 +176,7 @@ export default function Card() {
                   </div>
                 </div>
                 {/* ////// */}
-                <div  className="position-relative col-md2 col-sm-6 ">
+                <div  className="position-relative col-md-2 col-sm-6 ">
                   <div
                     className="card position-relative border-red cardS"
                     style={{ width: "13rem" }}
