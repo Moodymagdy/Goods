@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Navbar/Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');
@@ -43,7 +43,8 @@ export default function Navbar() {
               <NavLink to="/signin" className="btn btn-outline mx-4" style={{ color: '#b80000' }}>Sign In</NavLink>
               {/* Register button */}
               <div className='d-flex align-items-center'>
-                <button className="btn btn-dark text-danger rounded-pill px-4 " type="button">Register</button>
+                <Link to="/register"
+                 className="btn btn-dark text-danger rounded-pill px-4 " type="button">Register</Link>
                 <span style={{ color: 'black' }}>
                   <i className="fa-solid fa-cart-shopping mt-2 px-2 mx-2"></i>
                 </span>
