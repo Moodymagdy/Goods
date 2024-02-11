@@ -1,5 +1,5 @@
 .blog{
-    margin: 60px !important;
+    margin: 20px !important;
   }
   .cardN{
     border-radius: 28px !important;
@@ -9,7 +9,7 @@
   }
   .img_card{
     border-radius: 30px !important;
-    width: 80% !important;
+    width: 90% !important;
     margin-top: 18px !important;
   }
   .mt--15{
@@ -30,7 +30,7 @@
   .reedmore {
     margin-top: -7px;
     color: red !important;
-    margin-left: 150px !important;
+    margin-left: 110px !important;
     font-size: medium !important;
     width: 125px !important;
     text-decoration: auto;
@@ -42,8 +42,53 @@
 .ms-5rem {
   margin-left: 5rem!important;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .px-5rem {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+  }
+  .row.mt-3.d-flex.justify-content-center {
+    display: flex !important;
+    justify-content: space-evenly !important;
+  }
+  .position-relative.col-md-4.col-lg-4.col-sm-6.mt-1:nth-child(3) {
+    display: none;
+  }
+  .position-relative.col-md-4.col-lg-4.col-sm-6.mt-1:nth-child(3) {
+    width: Calc(100%/2) !important;
+  }
+  .position-relative.col-md-4.col-lg-4.col-sm-6.mt-1:nth-child(3) {
+width: Calc(100%/2) !important;
+  }
   .ms-3rem {
-    margin-left: -3rem!important;
+    margin-left: -3rem !important;
+  }
+  .blog {
+    margin: 0px;
+  }
+  .me-7rem {
+    margin-right: 7rem!important;
+}
+.me-4rem {
+  margin-right: 4.5rem!important;
+}
+.gap-3rem {
+  gap: 1rem!important;
+}
+}
+@media screen and (max-width: 768px){
+  .ms-5rem {
+    margin-left: -1rem!important;
+}
+.p-4{
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+.me-7rem {
+  margin-right: 7rem!important;
+}
+.me-4rem {
+margin-right: 4.5rem!important;
 }
 }
