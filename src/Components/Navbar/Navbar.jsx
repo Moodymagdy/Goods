@@ -43,9 +43,9 @@ export default function Navbar() {
                 </button>
                 {/* Register button */}
                 <div className='d-flex align-items-center'>
-                <button className="btn btn-dark text-danger rounded-pill px-4 "  type="button">
+                <Link to="/register" className="btn btn-dark text-danger rounded-pill px-4 "  type="button">
                   Register
-                </button>
+                </Link>
                 <span style={{color:'black'}}>
                 
                 <i class="fa-solid fa-cart-shopping mt-2 px-2 mx-2"></i>
