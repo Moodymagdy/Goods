@@ -39,10 +39,10 @@ export default function Home() {
 
     {/* Cards  */}
     <div className="container pt-5">
-      <div className="row ">
+      <div className="row">
         {/* Card 1 */}
-        <div className="col-md-4 p-5 ">
-          <div className="card groove-border rounded-4">
+        <div className="col-md-4 p-5">
+          <div className="card groove-border rounded-4" style={{backgroundColor:'#fffef7'}}>
             <div className="card-body text-center">
             <i class=" fa-solid fa-truck-fast icon" ></i>
               <h4 className="mt-3">Free Shiping</h4>
@@ -53,7 +53,7 @@ export default function Home() {
 
         {/* Card 2 */}
         <div className="col-md-4 p-5">
-          <div className="card groove-border rounded-4">
+          <div className="card groove-border rounded-4" style={{backgroundColor:'#fffef7'}}>
             <div className="card-body text-center">
             <i class="icon-2 fa-solid fa-file-invoice-dollar icon"></i>
               <h4 className="mt-3">Money Back</h4>
@@ -64,7 +64,7 @@ export default function Home() {
 
         {/* Card 3 */}
         <div className="col-md-4 p-5">
-          <div className="card groove-border rounded-4">
+          <div className="card groove-border rounded-4" style={{backgroundColor:'#fffef7'}}>
             <div className="card-body text-center">
             <i className="fa-solid fa-headset icon"></i>
               <h4 className="mt-3">24/7 Support</h4>
@@ -151,30 +151,35 @@ export default function Home() {
 </section>
 
 
-{/*image and text*/}
-<div className="container-fluid  pt-5 mt-5 px-5 pb-5 mb-5">
-      <div className="row">
-        {/* First half */}
-        <div className="col-md-6 px-5 d-flex justify-content-start align-items-center  ">
-          <div>
-            <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
-            <h4 className='fw-bold pt-5'>Take Now <span className='green-text'>30%</span>  Off For All Grocer Product</h4>
-            <div className='pt-5'>
-            <button className="btn btn-sm rounded-pill mt-4 px-4 py-2" style={{backgroundColor:'#b80000', color:'white'}}>
- <span className='m-3'>Shop Now</span> 
- <i className="fa-solid fa-chevron-right"></i>
-</button>
-          </div>
-        </div>
-     </div>
-        {/* Second half */}
-       
-        <div className="col-md-6">
-          <img src={require("../Home/imgs/lab.jpeg")} alt="Your img" className="img-fluid img-large rounded-5" />
-        
+<div className="container-fluid pt-5 mt-5 px-md-5 pb-5 mb-5">
+  <div className="row">
+    {/* First half */}
+    <div className="col-md-6 px-md-5 d-flex flex-column justify-content-center align-items-start"> {/* Center text vertically and align it to the start */}
+      <div>
+        <h1 className='text-danger fw-bold text-large'>For All Grocery Product</h1>
+        <h4 className='fw-bold pt-5'>Take Now <span className='green-text'>30%</span> Off For All Grocer Product</h4>
+        <div className='pt-5'>
+          <button className="btn btn-sm rounded-pill mt-4 px-4 py-2" style={{ backgroundColor: '#b80000', color: 'white' }}>
+            <span className='m-3'>Shop Now</span>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>
+    
+    {/* Second half */}
+    <div className="col-md-6 d-flex justify-content-center align-items-center"> {/* Center the image on medium and larger screens */}
+      <div className="text-center"> {/* Center the image and create space between the button on smaller screens */}
+        <img src={require("../Home/imgs/lab.jpeg")} alt="Your img" className="img-fluid img-large rounded-5 mb-3 mb-sm-0 custom-img" /> {/* Add custom class for styling */}
+        <div className="d-sm-none pt-3"> {/* Add space between the button and the image on smallest screens */}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <Card/>
 <News/> 
 
