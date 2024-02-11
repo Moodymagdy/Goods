@@ -1,0 +1,49 @@
+.login-page {
+    background-color: blue; /* Set background color of the page */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    background-color: white; /* Set background color of the form container */
+    border-radius: 1px; /* Add border radius to make the container look like a square */
+    
+    
+  }
+ 
+.px-10{
+  padding-inline:90px;
+}
+  .login-form-label {
+    font-size: 18px; /* Adjust font size as needed */
+   
+
+    
+  
+  }
+  .carrefour-logo {
+    margin: 0 auto 2px; /* Center the image horizontally and add some margin below */
+  }
+
+  
+  
+  .horizontal-line-wrapper {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .horizontal-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(99, 98, 98);
+    margin: 0 1px 0 1px;
+    
+  }
+  .text-secondary {
+    margin: 0 10px;
+  }
+  
+  

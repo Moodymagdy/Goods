@@ -6,6 +6,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
 import './App.css';
+import Login from './Components/Login/Login';
 
 
 let routers = createBrowserRouter([
@@ -14,6 +15,9 @@ let routers = createBrowserRouter([
     {path:'products',element:<Products/>},
     {path:'*',element:<NotFound/>}
   ]},
+
+  {path:'signin',element:<Login/>},
+
   {path:'register',element:<Register/>},
 ])
 
@@ -21,14 +25,7 @@ let routers = createBrowserRouter([
 
 function App() {
   return <RouterProvider router={routers}/>
-  
 
-  
-  
-
-    
-
-    
   
 };
 
