@@ -4,6 +4,7 @@ import Layout from './Components/Layout/Layout';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Products from './Components/Products/Products';
+import Register from './Components/Register/Register';
 import './App.css';
 
 
@@ -12,7 +13,8 @@ let routers = createBrowserRouter([
     {index:true,element:<Home/>},
     {path:'products',element:<Products/>},
     {path:'*',element:<NotFound/>}
-  ]}
+  ]},
+  {path:'register',element:<Register/>},
 ])
 
 

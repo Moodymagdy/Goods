@@ -1,0 +1,95 @@
+.p-20{
+    padding: 20px 101px !important;
+}
+.bg-r{
+    background-color: #b80000 !important;
+
+}
+.bg-f{
+    background-color: #fffef7!important;
+}
+.goods{
+    color: #b80000;
+}
+.css-19rz69o {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    margin: 5px;
+}
+.w-90{
+    width: 90% !important;
+}
+.w-20{
+    width: 20% !important;  
+}
+.ml-6{
+    margin-left: 3.5rem !important;
+}
+.f-2{
+    font-size: 20px !important;
+}
+.data {
+    direction: ltr;
+    text-align: left;
+}
+.inputBox{
+    position:relative;
+    padding: 30px;
+}
+
+
+.inputBox input{
+    position:relative;
+    width : 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-align: end;
+    border: 0 ;
+    border-bottom: 3px solid #ffa8b0;
+    transition: border-bottom 2ms;
+    outline: 0;
+    background: transparent;
+    color: #000;
+}
+.inputBox label{
+    position:absolute;
+    right: 0;
+    padding: 10px 0;
+    color: #757575;
+}
+/* /// */
+Form{
+border-radius: 10px;
+}
+.inputBox input:focus{
+    transition: 2s;
+    border-bottom:3px solid #b80000;
+}
+.inputBox input:valid{
+
+    border-bottom:3px solid #b80000;
+}
+
+.inputBox button{
+    background-color: #b80000 ;
+}
+.inputBox button:hover {
+    background-color: #ff0000;
+  }
+.inputBox input:focus ~label{
+    transition: 0.8s;
+    transform: translateY(-25px);
+    font-size: 13.5px;
+}
+.inputBox input:valid ~label{
+
+    transform: translateY(-25px);
+}
+hr{
+    margin: 10px auto;
+    height: 2px;
+    display: inline-block;
+    background-color: hsl(0, 0%, 0%);
+    width: 30%;
+}
