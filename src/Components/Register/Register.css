@@ -1,3 +1,4 @@
+
 .p-20{
     padding: 20px 101px !important;
 }
@@ -30,7 +31,7 @@
     font-size: 20px !important;
 }
 .data {
-    direction: ltr;
+    direction: rtl;
     text-align: left;
 }
 .inputBox{
@@ -44,9 +45,9 @@
     width : 100%;
     padding: 10px 15px;
     font-size: 1rem;
-    text-align: end;
+    text-align: start;
     border: 0 ;
-    border-bottom: 3px solid #ffa8b0;
+    border-bottom: 3px solid #dcd8d8 !important;
     transition: border-bottom 2ms;
     outline: 0;
     background: transparent;
@@ -54,22 +55,27 @@
 }
 .inputBox label{
     position:absolute;
-    right: 0;
+    left: 0;
     padding: 10px 0;
-    color: #757575;
+    color: #757575 ;
+    margin-left: 3.5rem !important;
 }
 /* /// */
 Form{
 border-radius: 10px;
 }
 .inputBox input:focus{
-    transition: 2s;
-    border-bottom:3px solid #b80000;
+    transition: 1s;
+    border-bottom:3px solid #4612e0 !important;
 }
-.inputBox input:valid{
+.has-error input:valid{
+    transition: 2s;
+    border-bottom:3px solid #b80000 !important;
+}
+/* .inputBox input:valid{
 
     border-bottom:3px solid #b80000;
-}
+} */
 
 .inputBox button{
     background-color: #b80000 ;
@@ -92,4 +98,13 @@ hr{
     display: inline-block;
     background-color: hsl(0, 0%, 0%);
     width: 30%;
+}
+.error{
+    border: 0 !important;
+    color: red !important;
+    .inputBox input{
+        transition: 2s;
+        border-bottom:3px solid #4612e0;
+    }
+    
 }
