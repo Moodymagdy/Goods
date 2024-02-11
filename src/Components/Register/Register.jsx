@@ -7,7 +7,7 @@ import axios from 'axios';
 export default function Register() {
 const[user,setUser]=useState({
    Title:'',
-  Name:"",
+  username:"",
   Family_Name:"",
   Mobile:0,
   email: "",
@@ -61,7 +61,7 @@ else{
 function validateRegisterForm(){
   let scheme= Joi.object({
     Title:Joi.string().required(),
-    Name:Joi.string().min(2).max(12).required(),
+    username:Joi.string().min(2).max(12).required(),
     Family_Name:Joi.string().min(2).max(12).required(),
     Mobile:Joi.number().integer().greater(999999999).less(10000000000).required(),
     email:Joi.string().email({ tlds: { allow: ['net', 'com'] } }).required(),
@@ -118,7 +118,7 @@ return scheme.validate(user , {abortEarly:false});
             }
               )}
             <div className={`inputBox ${errorList.length !== 0 ?'has-error' : ''}`}>
-              <input className='transition' name='Name' type='text'  onChange={getUserData} />
+              <input className='transition' name='username' type='text'  onChange={getUserData} />
               <label>Name</label>
               {errorList?.map((err,index)=>{if(err.context.label==="Name") {
               return <div key={index} className='alert error text-start'>{err.message}</div>
