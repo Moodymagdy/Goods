@@ -79,9 +79,11 @@ border-radius: 10px;
 
 .inputBox button{
     background-color: #b80000 ;
+    color: #fff;
 }
 .inputBox button:hover {
     background-color: #ff0000;
+    color: #fff;
   }
 .inputBox input:focus ~label{
     transition: 0.8s;

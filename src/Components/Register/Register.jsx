@@ -234,7 +234,7 @@ return scheme.validate(user , {abortEarly:false});
             <hr />
           </div>
           <div className='p-2'>
-            <Link to="/login">
+            <Link to="/signin">
               <button className='btn btn-outline-primary w-100'>Log in</button>
             </Link>
           </div>
