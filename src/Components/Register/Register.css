@@ -68,7 +68,7 @@ border-radius: 10px;
     transition: 1s;
     border-bottom:3px solid #4612e0 !important;
 }
-.has-error input:valid{
+.has-error input{
     transition: 2s;
     border-bottom:3px solid #b80000 !important;
 }
@@ -107,6 +107,6 @@ hr{
     .inputBox input{
         transition: 2s;
         border-bottom:3px solid #4612e0;
-    }
+    } 
     
 }

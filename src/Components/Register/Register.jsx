@@ -16,7 +16,7 @@ const[user,setUser]=useState({
   month:"",
   year:""
 })
-const[error, setError] = useState("");
+const[errorMessage, setErrorMessage] = useState("");
 const [errorList,setErrorList]=useState([]);
 let navigate=useNavigate();
 
@@ -44,7 +44,7 @@ async function sendDateToApi() {
       navigate('/login')
     })
     .catch((error) => {
-      setError(error.message);
+      setErrorMessage(error.message);
     });
 }
 function submitedRegisterForm(e){
@@ -120,7 +120,7 @@ return scheme.validate(user , {abortEarly:false});
             <div className={`inputBox ${errorList.length !== 0 ?'has-error' : ''}`}>
               <input className='transition' name='username' type='text'  onChange={getUserData} />
               <label>Name</label>
-              {errorList?.map((err,index)=>{if(err.context.label==="Name") {
+              {errorList?.map((err,index)=>{if(err.context.label==="username") {
               return <div key={index} className='alert error text-start'>{err.message}</div>
              }
             }
@@ -142,16 +142,18 @@ return scheme.validate(user , {abortEarly:false});
             <div className={`inputBox w-20 p-2 ${errorList.length !== 0 ?'has-error' : ''}`}>
                 <input value={"+20"} placeholder='+20' type='text' disabled />
               </div>
-              <div className='inputBox w-75 p-2'>
+              <div className={`inputBox w-75 p-2  ${errorList.length !== 0 ?'has-error' : ''}`}>
                 <input name='Mobile' type='text'  onChange={getUserData} />
                 <label>Mobile number</label>
-                {errorList?.map((err,index)=>{if(err.context.label==="Mobile") {
+
+             
+              {errorList?.map((err,index)=>{if(err.context.label==="Mobile") {
               return <div key={index} className='alert error text-start'>
                 <span>your mobile number must be 11 numbers </span>
               </div>
              }
             }
-              )}
+              )} 
               </div>
 
             </div>
