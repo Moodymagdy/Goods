@@ -85,8 +85,8 @@ const filterCategory = () => {
 
   
   return (
-    <>
-      <div className="sidebar">
+    <div className="container m-3 d-flex">
+      <div className="sidebar row">
         <h3>PriceFilter</h3>
         {filters.map((price, index) => (
           <label key={`filter-${index}`}>
@@ -111,8 +111,8 @@ const filterCategory = () => {
             ))}
       </div>
 
-      <div className="container card-container">
-        <div className=" sale">
+      <div className=" card-container row">
+        <div className="">
             <h2>Sale</h2>
             <div className="row justify-content-evenly">
           {filteredProducts.map((item, index) => (
@@ -153,6 +153,6 @@ const filterCategory = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

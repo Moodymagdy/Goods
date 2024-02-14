@@ -1,7 +1,7 @@
 .card-container{
     display: flex !important;
     flex-wrap: wrap !important;
-    margin-left: 11rem !important;
+    margin-left: 2rem !important;
     /* margin-top: 1rem !important; */
     z-index: -2 !important;
     padding: 0 !important;
