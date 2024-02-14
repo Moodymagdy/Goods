@@ -6,13 +6,16 @@ import NotFound from './Components/NotFound/NotFound';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import Shopping from './Components/Shopping/Shopping';
 import Shop from './Components/Shop/Shop';
 import './App.css';
+
 
 
 let routers = createBrowserRouter([
   {path:'/', element:<Layout/> ,children:[
     {index:true,element:<Home/>},
+    {path:'shopping',element:<Shopping/>},
     {path:'products',element:<Products/>},
     {path:'Shop',element:<Shop/>},
     {path:'*',element:<NotFound/>}
@@ -26,6 +29,7 @@ let routers = createBrowserRouter([
 
 
 function App() {
+  
   return <RouterProvider router={routers}/>
 
   

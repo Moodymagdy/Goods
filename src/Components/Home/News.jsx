@@ -19,7 +19,7 @@ export default function News() {
     
       useEffect(() => {
         getNews();
-      });
+      },[]);
     
 
   return (
