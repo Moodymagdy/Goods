@@ -6,13 +6,12 @@ import axios from 'axios'; // Import Axios
 import Joi from 'joi'; // Import Joi
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom
 
-
 export default function Login() {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
   const [passwordError, setPasswordError] = useState('');
-  const [errorMessage, setErrorMessage] = useState(''); // State to store error message
+  const [errorMessage, setErrorMessage] = useState('');
 
   const emailSchema = Joi.string().email({ tlds: { allow: false } }).required();
   const passwordSchema = Joi.string()
@@ -26,7 +25,7 @@ export default function Login() {
     });
 
   const onFinish = async (values) => {
-    setLoading(true); // Set loading state to true before Axios request
+    setLoading(true);
     try {
       await schema.validateAsync(values);
       const response = await axios.post('http://195.35.29.81:8004/api/User/Login', {
@@ -34,22 +33,22 @@ export default function Login() {
         password: values.password
       });
       console.log('API Response:', response.data);
-      // Save token to state
+
+      // Save token to local storage
+      localStorage.setItem('token', response.data.token);
+
       // Navigate to home page
       navigate('/');
     } catch (error) {
       console.error('Error:', error);
       if (error.response && error.response.status === 401) {
-        // Unauthorized (incorrect email or password)
-        // Extract message from response data and set error message state
         const errorMessage = error.response.data?.[0] || 'Invalid login!';
-        setErrorMessage(errorMessage); // Set error message state
+        setErrorMessage(errorMessage);
       } else {
-        // Other error (network error, server error, etc.)
-        // Handle error, e.g., display error message to the user
+        // Handle other errors
       }
     } finally {
-      setLoading(false); // Set loading state to false after Axios request completes or encounters an error
+      setLoading(false);
     }
   };
 
@@ -89,7 +88,7 @@ export default function Login() {
           <h4 className="login-form-label mx-5">Login to your account</h4>
           {errorMessage && <div style={{ color: 'red', marginBottom: '10px' }}>{errorMessage}</div>}
           <Form.Item
-          validateTrigger="onBlur"
+            validateTrigger="onBlur"
             name="username"
             rules={[
               { required: true, message: 'Please input your Username!' },

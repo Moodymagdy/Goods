@@ -58,7 +58,7 @@ export default function Products() {
               <div className="product-list d-flex py-4 mx-3 ">
                 {products.map(product => (
                   <div key={product.id} className="product-item">
-                    <div className="card px-5 rounded-4">
+                    <div className="card px-4 rounded-4">
                       <img src={product.imageSrc} alt={product.alt} className="product-image mt-2" />
                       <div className="button-container">
                         <button className="btn btn-product" onClick={() => handleAddButtonClick(product)}>Add</button>

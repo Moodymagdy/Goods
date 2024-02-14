@@ -15,10 +15,51 @@ export default function Card() {
       })
       .catch((error) => {});
   }
+  const handleAddToCart = async (productId) => {
+    try {
+      // Retrieve token from localStorage
+      const token = localStorage.getItem('token');
+  
+      // Check if token exists
+      if (!token) {
+        // Handle scenario where token is not available, e.g., redirect to login page
+        console.error('Token not found!');
+        return;
+      }
+  
+      // Set token in request headers
+      const config = {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      };
+  
+      // Make POST request with token included in headers
+      const response = await axios.post(
+        "http://195.35.29.81:8004/api/CartItem/AddCartItem",
+        {
+          
+            "productId": productId,
+            "amount": 0
+          
+        },
+        config
+      );
+  
+      console.log("Added to cart:", response.data);
+      // You can handle success scenario here, e.g., show a message to the user
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+      // You can handle error scenario here, e.g., show an error message to the user
+    }
+  };
+  
+
+
 
   useEffect(() => {
     getData();
-  });
+  },[]);
 
   return (
     <>
@@ -54,7 +95,7 @@ export default function Card() {
                 <div className="d-grid gap-2 col-6 mx-auto ">
                   <button 
                     className="btn btn-danger btn-block add-Btn"
-                    type="button"
+                    type="button" onClick={() => handleAddToCart()}
                
                   >
                     Add
@@ -91,7 +132,7 @@ export default function Card() {
                 <div className="d-grid gap-2 col-6 mx-auto ">
                   <button 
                     className="btn btn-danger btn-block add-Btn"
-                    type="button"
+                    type="button" onClick={() => handleAddToCart()}
                     
                   >
                     Add
@@ -128,7 +169,7 @@ export default function Card() {
                 <div className="d-grid gap-2 col-6 mx-auto ">
                   <button 
                     className="btn btn-danger btn-block add-Btn"
-                    type="button"
+                    type="button" onClick={() => handleAddToCart()}
                     
                   >
                     Add
@@ -166,7 +207,7 @@ export default function Card() {
                 <div className="d-grid gap-2 col-6 mx-auto ">
                   <button 
                     className="btn btn-danger btn-block add-Btn"
-                    type="button"
+                    type="button" onClick={() => handleAddToCart()}
                     
                   >
                     Add
@@ -203,7 +244,7 @@ export default function Card() {
                 <div className="d-grid gap-2 col-6 mx-auto ">
                   <button 
                     className="btn btn-danger btn-block add-Btn"
-                    type="button"
+                    type="button" onClick={() => handleAddToCart()}
                   
                   >
                     Add

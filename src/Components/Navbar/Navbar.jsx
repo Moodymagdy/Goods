@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     
-    <nav className="navbar navbar-expand-lg bg-transparent fw-bold mx-5 ">
+    <nav className="navbar navbar-expand-lg bg-white fixed-top fw-bold mx-5 ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" style={{ color: '#b80000' }} to="/"><h3>Goods</h3></NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

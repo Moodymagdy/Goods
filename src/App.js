@@ -6,12 +6,10 @@ import NotFound from './Components/NotFound/NotFound';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
-<<<<<<< HEAD
 import Shopping from './Components/Shopping/Shopping';
-=======
 import Shop from './Components/Shop/Shop';
 import './App.css';
->>>>>>> f370ddc1373b81764a2e8c0d5a1cd28186fe6194
+
 
 
 let routers = createBrowserRouter([
