@@ -52,9 +52,10 @@ export default function Card() {
                 </div>
 
                 <div className="d-grid gap-2 col-6 mx-auto ">
-                  <button
+                  <button 
                     className="btn btn-danger btn-block add-Btn"
                     type="button"
+               
                   >
                     Add
                   </button>
@@ -88,9 +89,10 @@ export default function Card() {
                 </div>
 
                 <div className="d-grid gap-2 col-6 mx-auto ">
-                  <button
+                  <button 
                     className="btn btn-danger btn-block add-Btn"
                     type="button"
+                    
                   >
                     Add
                   </button>
@@ -124,9 +126,10 @@ export default function Card() {
                 </div>
 
                 <div className="d-grid gap-2 col-6 mx-auto ">
-                  <button
+                  <button 
                     className="btn btn-danger btn-block add-Btn"
                     type="button"
+                    
                   >
                     Add
                   </button>
@@ -161,9 +164,10 @@ export default function Card() {
                 </div>
 
                 <div className="d-grid gap-2 col-6 mx-auto ">
-                  <button
+                  <button 
                     className="btn btn-danger btn-block add-Btn"
                     type="button"
+                    
                   >
                     Add
                   </button>
@@ -197,9 +201,10 @@ export default function Card() {
                 </div>
 
                 <div className="d-grid gap-2 col-6 mx-auto ">
-                  <button
+                  <button 
                     className="btn btn-danger btn-block add-Btn"
                     type="button"
+                  
                   >
                     Add
                   </button>

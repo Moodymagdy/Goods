@@ -1,16 +1,22 @@
 import React, { useState } from 'react';
-import '../Navbar/Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState('');
+ 
+  
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
 
+ 
+
+  
+
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent fw-bold mx-5">
+    
+    <nav className="navbar navbar-expand-lg bg-transparent fw-bold mx-5 ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" style={{ color: '#b80000' }} to="/"><h3>Goods</h3></NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +28,7 @@ export default function Navbar() {
               <NavLink className='nav-link' onClick={() => handleLinkClick('Home')} activeClassName="active" style={{ color: activeLink === 'Home' ? 'red' : 'black' }} exact to="/">Home</NavLink>
             </li>
             <li className="nav-item px-2">
-              <NavLink className= 'nav-link' onClick={() => handleLinkClick('Sale')} activeClassName="active" style={{ color: activeLink === 'Sale' ? 'red' : 'black' }} to="/sale">Sale</NavLink>
+              <NavLink className='nav-link' onClick={() => handleLinkClick('Sale')} activeClassName="active" style={{ color: activeLink === 'Sale' ? 'red' : 'black' }} to="/sale">Sale</NavLink>
             </li>
             <li className="nav-item px-2">
               <NavLink className='nav-link' onClick={() => handleLinkClick('Products')} activeClassName="active" style={{ color: activeLink === 'Products' ? 'red' : 'black' }} to="/products">Products</NavLink>
@@ -43,11 +49,16 @@ export default function Navbar() {
               <NavLink to="/signin" className="btn btn-outline mx-4" style={{ color: '#b80000' }}>Sign In</NavLink>
               {/* Register button */}
               <div className='d-flex align-items-center'>
-                <Link to="/register"
-                 className="btn btn-dark text-danger rounded-pill px-4 " type="button">Register</Link>
-                <span style={{ color: 'black' }}>
+                <Link to="/register" className="btn btn-dark text-danger rounded-pill px-4" type="button">Register</Link>
+                <Link to="/Shopping" style={{ color: 'black' }}>
+                <div style={{ position: 'relative' }}>
                   <i className="fa-solid fa-cart-shopping mt-2 px-2 mx-2"></i>
-                </span>
+                </div>
+               
+              </Link>
+
+                
+           
                 <p className='text-black my-2'>0,00$</p>
               </div>
             </div>

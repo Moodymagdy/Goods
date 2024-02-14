@@ -4,7 +4,8 @@ import { Button, Form, Input } from 'antd';
 import './Login.css'; // Import your custom CSS file
 import axios from 'axios'; // Import Axios
 import Joi from 'joi'; // Import Joi
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate hook from react-router-dom
+
 
 export default function Login() {
   const navigate = useNavigate(); // Initialize useNavigate hook
@@ -20,7 +21,7 @@ export default function Login() {
     .required()
     .error(() => {
       return new Error(
-        'Password must be at least 8 characters'
+        'Password must contain 9 characters'
       );
     });
 
@@ -126,9 +127,9 @@ export default function Login() {
             </div>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit" className=" btn btn-outline-primary col-12" size='large'>
+            <Link to="/register" type="primary" htmlType="submit" className=" btn btn-outline-primary col-12" size='large'>
               Register
-            </Button>
+            </Link>
           </Form.Item>
         </Form>
       </div>

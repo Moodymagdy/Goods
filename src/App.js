@@ -7,11 +7,13 @@ import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
 import './App.css';
 import Login from './Components/Login/Login';
+import Shopping from './Components/Shopping/Shopping';
 
 
 let routers = createBrowserRouter([
   {path:'/', element:<Layout/> ,children:[
     {index:true,element:<Home/>},
+    {path:'shopping',element:<Shopping/>},
     {path:'products',element:<Products/>},
     {path:'*',element:<NotFound/>}
   ]},
@@ -24,6 +26,7 @@ let routers = createBrowserRouter([
 
 
 function App() {
+  
   return <RouterProvider router={routers}/>
 
   
