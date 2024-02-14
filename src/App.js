@@ -5,14 +5,16 @@ import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import Products from './Components/Products/Products';
 import Register from './Components/Register/Register';
-import './App.css';
 import Login from './Components/Login/Login';
+import Shop from './Components/Shop/Shop';
+import './App.css';
 
 
 let routers = createBrowserRouter([
   {path:'/', element:<Layout/> ,children:[
     {index:true,element:<Home/>},
     {path:'products',element:<Products/>},
+    {path:'Shop',element:<Shop/>},
     {path:'*',element:<NotFound/>}
   ]},
 
